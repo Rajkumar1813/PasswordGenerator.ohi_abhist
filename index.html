@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/040178dbde.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <h1 class="heading">Password Generator</h1>
+        <div id="result"></div>
+        <form action="" onsubmit="return false">
+            <div class="container">
+                <label for="length">Password Length</label>
+                <input id="length" type="number" class="numinput">
+            </div>
+            <div class="container">
+                <label for="upperCase">Include UpperCase Letters</label>
+                <input id="upperCase" type="checkbox">
+            </div>
+            <div class="container">
+                <label for="loweCase">Include LowerCase Letters</label>
+                <input id="lowerCase" type="checkbox">
+            </div>
+            <div class="container">
+                <label for="numbers">Include Numbers</label>
+                <input id="numbers" type="checkbox">
+            </div>
+            <div class="container">
+                <label for="symbols">Include Symbols</label>
+                <input id="symbols" type="checkbox">
+            </div>
+            <button id="generateButton" type="submit">Generate Password</button>
+        </form>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
